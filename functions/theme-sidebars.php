@@ -135,7 +135,6 @@ function kr8_wpsearch($form) {
 		$title = $instance['title'];
 		$twitter = $instance['twitter'];
 		$facebook = $instance['facebook'];
-		$googleplus = $instance['googleplus'];
 		$flickr = $instance['flickr'];
 		$instagram = $instance['instagram'];
 		$youtube = $instance['youtube'];
@@ -163,12 +162,6 @@ function kr8_wpsearch($form) {
 			<?php 
 			if($facebook != '') {
 				echo '<li><a href="'.$facebook.'"title="Facebook"><span class="fa fa-fw fa-facebook"></span><span class="hidden">Facebook</span></a></li>';
-			}
-			?>
-
-			<?php 
-			if($googleplus != '') {
-				echo '<li><a href="'.$googleplus.'" title="Google+"><span class="fa fa-fw fa-google-plus"></span><span class="hidden">Google+</span></a></li>';
 			}
 			?>
 
@@ -241,7 +234,6 @@ function kr8_wpsearch($form) {
 		$title = esc_attr($instance['title']);
 		$twitter = esc_attr($instance['twitter']);
 		$facebook = esc_attr($instance['facebook']);
-		$googleplus = esc_attr($instance['googleplus']);
 		$flickr = esc_attr($instance['flickr']);
 		$instagram = esc_attr($instance['instagram']);
 		$youtube = esc_attr($instance['youtube']);
@@ -271,12 +263,7 @@ function kr8_wpsearch($form) {
             <label for="<?php echo $this->get_field_id('facebook'); ?>"><?php _e('Facebook URL:'); ?></label>
             <input type="text" name="<?php echo $this->get_field_name('facebook'); ?>" value="<?php echo $facebook; ?>" class="widefat" id="<?php echo $this->get_field_id('facebook'); ?>" />
         </p>
-		
-		<p>
-            <label for="<?php echo $this->get_field_id('googleplus'); ?>"><?php _e('Google+ URL:'); ?></label>
-            <input type="text" name="<?php echo $this->get_field_name('googleplus'); ?>" value="<?php echo $googleplus; ?>" class="widefat" id="<?php echo $this->get_field_id('googleplus'); ?>" />
-        </p>
-		
+			
 		<p>
             <label for="<?php echo $this->get_field_id('flickr'); ?>"><?php _e('Flickr URL:'); ?></label>
             <input type="text" name="<?php echo $this->get_field_name('flickr'); ?>" value="<?php echo $flickr; ?>" class="widefat" id="<?php echo $this->get_field_id('flickr'); ?>" />
