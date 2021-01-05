@@ -122,7 +122,7 @@ Template Name: Startseite - Kampagnen
     				<h2><span>Termine</span></h2>
     				<div class="tab clearfix">
 	    				
-	    				<?php echo do_shortcode('[wpcalendar anzahl="5" kat="kampagne"]'); ?>
+	    				<?php dynamic_sidebar('termine');?>
 					</div>
 					
 					<h2><span>Presse</span></h2>
