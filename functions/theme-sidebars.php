@@ -75,7 +75,17 @@ if (!function_exists('kr8_register_sidebars')) {
 				'after_widget' => '</div>',
 				'before_title' => "\n\t" . '<h3>',
 				'after_title' => '</h3>',
-			));			
+			));
+			
+			register_sidebar(array(
+				'name' => 'Termine',
+				'description'   => 'Widget für Termine auf der Startseite',
+				'id' => 'termine',
+				'before_widget' => "\n\t\t" . '<li id="%1$s" class="widget %2$s">',
+				'after_widget' => '</li>',
+				'before_title' => "\n\t" . '<h3 class="widgettitle">',
+				'after_title' => '</h3>',
+			));
 		
 			
 			register_sidebar(array(
